@@ -64,6 +64,27 @@ public class Controller : MonoBehaviour
           }
     }
  
+    //ADDED code
+    public void AddMovementCommand(string command)
+    {
+        switch (command)
+        {
+            case "MoveRight":
+                sequence.Add(new MoveRight("MoveRight"));
+                break;
+
+            case "MoveLeft":
+                sequence.Add(new MoveLeft("MoveLeft"));
+                break;
+
+            // Add cases for other movement commands...
+
+            default:
+                break;
+        }
+    }
+    
+
     //recursive parser function
     private List<Function_> TranslateCodeFromBlocks(Transform parent, List<Function_> sequence_)
     {

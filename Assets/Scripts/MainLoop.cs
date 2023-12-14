@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MainLoop: MonoBehaviour //This is the loop
+public class MainLoop//This is the loop
 {
     GameObject mainTarget;
     List<Function_> sequence_; //After add all the movement from the trasnsform parent
